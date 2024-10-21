@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    height: auto; /* Promenite ovo */
+    display: flex;
+    justify-content: center;
+    background-color: #44474f;
+    overflow-x: hidden;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.content-cont {
+    padding-top: 60px;
+    width: 100%;
+    padding-bottom: -360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    padding-right: 180px;
+    justify-content: center;
+    margin-top: -60px;
+}
+
+.c{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.temperature-form {
+    margin-bottom: 20px;
+}
+
+.charts-container {
+    margin-top: -50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+@media (min-width: 600px) {
+    .charts-container > div {
+        flex: 1 1 calc(50% - 20px);
+        margin: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .charts-container > div {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+}

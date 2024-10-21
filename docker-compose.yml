@@ -1,0 +1,40 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env  
+    volumes:
+      - C:/Users/Andjela/Desktop/EnergoTerm/backend/energoterm-12575-firebase-adminsdk-9050k-80384e08b0.json:/app/firebase-adminsdk.json
+      
+
+  
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - node_modules:/app/node_modules
+
+
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: energoterm
+      POSTGRES_DB: EnergoTerm
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./data/_data__202405241050.csv:/data/_data__202405241050.csv
+
+volumes:
+  postgres_data:
+  node_modules:
+

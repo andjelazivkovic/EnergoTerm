@@ -1,0 +1,78 @@
+.home-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.content-container {
+    padding-top: 70px;
+    width: 100%;
+    padding-bottom: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.data-grid {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.paper {
+    padding: 20px;
+    background: #232324;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    background-color: #3f51b5;
+    margin-right: 16px;
+    color: white;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 8px;
+    color: #3f51b5;
+}
+
+.chip-container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.temperature-chip {
+    margin: 4px;
+    color:white
+}
+
+.chart-container {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+}
+
+.pie-chart {
+    width: 70%;
+    height: 80%;
+}
